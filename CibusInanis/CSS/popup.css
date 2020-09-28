@@ -1,0 +1,121 @@
+
+.knapp{
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    top: 10px;
+    width: auto;
+    right: 200px;
+    transform: translate(-50%);
+    font-size: 20px;
+    padding: 10px;
+    color: #333333;
+    border: 2px solid #222D4D;
+    border-radius: 75px;
+    text-decoration: none;
+    cursor: pointer;
+    //transition: all 0.3s;
+}
+.knapp:hover {
+    background: #222D4D;
+    color: white;
+    transition-duration: 1s;
+}
+
+.knapp:focus-within{
+    background: #222D4D;
+    color: white;
+    transition-duration: 1s;
+}
+
+
+
+.knapp a{
+    display: inline;
+}
+
+.fa-search-plus{
+    margin-top: 5px;
+    margin-left: 2px;
+    width: auto;
+    font-size: 20px;
+    display: inline-block;
+    float: right;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    //transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #222D4D;
+    border-radius: 5px;
+    width: 50%;
+    min-width: auto;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.popup .lukk {
+    position: absolute;
+    width: auto;
+    top: 10px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.popup .lukk:hover {
+    color: white;
+}
+.popup .innhold {
+    color: white;
+    font-size: 30px;
+    max-height: 30%;
+    overflow: auto;
+
+}
+
+.popup h2{
+    font-size: 40px;
+    color: white;
+    padding-right: 30px;
+}
+
+.popup p{
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 1230px) {
+    .knapp{
+        right: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .knapp{
+        display: none;
+    }
+
+
+    .popup{
+        width: 80%;
+    }
+}

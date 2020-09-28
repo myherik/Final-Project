@@ -1,0 +1,240 @@
+.topA{
+    min-height: 70px;
+}
+
+.liten{
+    display: none;
+}
+
+.fa-arrow-left{
+    width: auto;
+}
+
+
+.hovedA{
+    min-height: calc(100vh - 70px);
+    background-color: white;
+    padding-right: 20%;
+    padding-left: 20%;
+    color: #222D4D;
+    font-size: 20px;
+}
+
+.hovedA h1{
+    text-align: center;
+}
+
+.hold{
+    position: sticky!important;
+    top: 70px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    display: block;
+    background-color: white;
+}
+
+.hovedA p{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.radA{
+    width: 100%;
+    position: static;
+    height: fit-content;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.kolloneA{
+    float: left;
+    display: inline-block;
+    width: 50%;
+    padding: 0 25px;
+    margin-bottom: 20px;
+}
+
+.screenshot{
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.screenshot img{
+    position: relative;
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+.no\/enApp{
+    float: right;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    font-size: 30px;
+    line-height: 50px;
+
+}
+
+.no\/enApp a{
+    color: black;
+    float: right;
+}
+
+.no\/enApp img{
+    display: inline-block;
+    line-height: 50px;
+    height: 25px;
+    width: auto;
+}
+
+.NOApp{
+    margin-top: 10px;
+    border: black solid 1px;
+    height: 50px;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    display: inline-block;
+    width: 110px;
+    float: left;
+}
+
+.ENApp{
+    margin-top: 10px;
+    border: black solid 1px;
+    height: 50px;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    display: inline-block;
+    width: 110px;
+    float: left;
+}
+
+.aktivSpraak a{
+    color: white;
+}
+
+.navLinksApp{
+    position: absolute;
+    padding: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: auto;
+    display: inline-block;
+    z-index: 9;
+    text-align: center;
+    height: 70px;
+    letter-spacing: 0;
+
+}
+
+.appLinker{
+    width: 100%;
+    text-align: center;
+}
+
+.appLinker img{
+    width: 25%;
+    height: auto;
+    margin: 20px 10px 50px 10px;
+}
+
+
+.lukeAppBunn{
+    position: absolute;
+    width: 100%;
+    top: -70px;
+}
+
+.tekstApp p{
+    text-align: center!important;
+}
+
+@media screen and (max-width: 1000px){
+    .hovedA{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .kolloneA{
+        width: 100%;
+    }
+
+    .screenshot{
+        width: 70%;
+        float: initial;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    .kolloneA{
+        width: 100%;
+    }
+
+    .NOApp{
+        font-size: 15px;
+        width: 50px;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .no\/enApp{
+        margin-top: -5px;
+    }
+
+    .no\/enApp a{
+        line-height: 40px;
+    }
+
+    .NOApp img{
+        display: none;
+    }
+
+    .ENApp{
+        font-size: 15px;
+        width: 50px;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .ENApp img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .ikon{
+        display: none;
+    }
+    .liten{
+        display: initial;
+    }
+
+    .liten a{
+        text-align: right;
+        display: inline-block;
+        width: 60px;
+    }
+
+    .navLinksApp a{
+        font-size: 20px;
+    }
+    .appLinker img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .navLinksApp{
+        left: 45%;
+    }
+}

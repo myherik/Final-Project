@@ -1,0 +1,183 @@
+.uno{
+    position: relative;
+    top: 0;
+    overflow: auto;
+    height: calc(100vh - 70px);
+    z-index: 0;
+}
+
+#unos{
+    scroll-margin-top: -70px;
+}
+
+.dos{
+    position: relative;
+    top: 70px;
+    overflow: auto;
+    height: calc(100vh - 70px);
+    z-index: 0;
+}
+
+.dos h3{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.luke2 a p{
+    text-decoration: none;
+    color: white;
+}
+
+.om{
+    position: relative;
+}
+
+.pilOppOm{
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+}
+
+.pilOppOm i{
+    font-size: 50px;
+    text-decoration: none;
+    color: #222D4D;
+}
+
+.pilNedOm{
+    position: relative;
+    bottom: 40px;
+    height: 50px;
+
+    text-align: center;
+}
+
+
+
+.pilNedOm i{
+    font-size: 50px;
+    text-decoration: none;
+    color: #222D4D;
+}
+
+.pilNedOmEn{
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+}
+
+.pilNedOmEn i{
+    font-size: 50px;
+    text-decoration: none;
+    color: #222D4D;
+}
+
+.blå{
+    text-decoration: none!important;
+    color: #222D4D!important;
+}
+
+.pilOppZero{
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+}
+
+.pilOppZero i{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.pilNedZero{
+    position: relative;
+    bottom: 70px;
+    height: 50px;
+
+    text-align: center;
+}
+
+.pilNedZero i{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.pilOppBunn{
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+}
+
+.pilOppBunn i{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.uno h3{
+    text-align: center;
+    color: #222D4D;
+    font-size: 40px;
+}
+
+#unos{
+    position: absolute;
+    top: -140px;
+}
+
+#zeroOm{
+    position: relative;
+    height: 70px;
+}
+
+.ZeroWaste{
+    position: relative;
+//top: 70px;
+    background-color: #222D4D!important;
+    color: white!important;
+
+}
+
+.ZeroWaste h3{
+    background-color: #222D4D;
+}
+
+.ZeroWaste h1{
+    color: white;
+}
+
+
+@media screen and (max-width: 1200px){
+    .uno h1{
+        font-size: 30px;
+    }
+
+    .uno h3{
+        font-size: 20px;
+    }
+
+    .ZeroWaste h1{
+        font-size: 30px;
+    }
+
+    .ZeroWaste h3{
+        font-size: 20px;
+    }
+
+}
+
+.kilder{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}

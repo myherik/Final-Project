@@ -1,0 +1,63 @@
+.topK{
+    min-height: 70px;
+}
+
+.hovedK{
+    min-height: calc(100vh - 70px);
+    background-color: white;
+    padding-right: 20%;
+    padding-left: 20%;
+    color: #222D4D;
+    font-size: 20px;
+}
+
+.hovedK h1{
+    text-align: center;
+}
+
+.hovedK a{
+    padding: 10px 0 4px 0;
+    display: block;
+    text-decoration: none;
+    color: #222D4D;
+    font-size: 20px;
+    text-align: left;
+}
+
+.hovedK p{
+    padding: 10px 0 4px 0;
+    display: block;
+    text-decoration: none;
+    color: #222D4D;
+    font-size: 20px;
+    text-align: left;
+}
+
+#første:focus{
+    background-color: #222D4D;
+    color: white;
+    scroll-margin-top: 170px;
+}
+
+#andre:focus{
+    background-color: #222D4D;
+    color: white;
+    scroll-margin-top: 190px;
+}
+
+#tredje:focus{
+    background-color: #222D4D;
+    color: white;
+    scroll-margin-top: 230px;
+}
+
+.linje{
+    border-bottom: 2px solid #222D4D;
+}
+
+.linje:focus-within{
+    background-color: #222D4D;
+    color: white;
+    scroll-margin-top: 230px;
+}
+

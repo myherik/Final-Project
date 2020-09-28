@@ -1,0 +1,1080 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: Verdana, sans-serif;
+    scroll-behavior: smooth;
+    //filter: grayscale(100%);
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+
+
+    /*forside*/
+
+.top{
+    top: 0;
+    margin: 0;
+    position: relative;
+    display: block;
+    height: 100vh;
+}
+
+.luke1{
+    position: absolute;
+    top: 0;
+    height: 70px;
+}
+
+    /*navbar*/
+
+.navbar{
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+
+.mobilmeny{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logoDiv{
+    position: absolute;
+    left: 10px;
+    width: auto;
+    height: 70px;
+    text-align: left;
+    color: black;
+    display: inline-block;
+    z-index: 10;
+}
+.logo{
+    color: black;;
+    text-decoration: none;
+}
+
+.logoDiv p{
+    text-align: center;
+    display: block;
+    font-size: 15px;
+}
+
+.logo img{
+    display: block;
+    width: auto;
+    margin: 5px 5px 0 5px;
+    height: 40px;
+}
+
+.navLinks{
+    position: absolute;
+    padding: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: auto;
+    display: inline-block;
+    z-index: 9;
+    text-align: center;
+    height: 70px;
+    letter-spacing: 0;
+
+}
+
+.link{
+    z-index: 10;
+    position: relative;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    color: #222D4D;
+    font-size: 25px;
+    line-height: 70px;
+    height: 100%;
+    display: inline-block;
+}
+
+
+.ikon{
+    width: auto;
+}
+
+.ikon i{
+    font-size: 30px;
+}
+
+.link a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+.strek{
+    font-size: 30px;
+    border-right: 1px solid black;
+    display: inline;
+}
+
+.link:hover a{
+    animation: linkAni 4s infinite;
+    -o-animation: linkAni 4s infinite;
+    border-right: 0;
+}
+
+.link:focus-within a{
+    animation: linkAni 4s infinite;
+    -o-animation: linkAni 4s infinite;
+    border-right: 0;
+}
+
+@keyframes linkAni {
+    0% {
+        border-radius: 75px;
+    }
+    50% {
+        box-shadow: 1px 1px 18px black;
+        background-color: #222D4D;
+        border-radius: 75px;
+        color: white;
+    }
+    100% {
+        border-radius: 75px
+    }
+}
+
+@-o-keyframes linkAni {
+    0% {
+        border-radius: 75px;
+    }
+    50% {
+        box-shadow: 1px 1px 18px black;
+        background-color: #222D4D;
+        border-radius: 75px;
+        color: white;
+    }
+    100% {
+        border-radius: 75px;
+    }
+}
+
+.no\/en{
+    float: right;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    font-size: 30px;
+    line-height: 50px;
+
+}
+
+.no\/en a{
+    color: black;
+    float: right;
+}
+
+.no\/en img{
+    display: inline-block;
+    line-height: 50px;
+    height: 25px;
+    width: auto;
+    border-collapse: collapse;
+}
+
+.NO{
+    margin-top: 10px;
+    border: black solid 2px;
+    height: 50px;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    display: inline-block;
+    width: 110px;
+    float: left;
+    border-collapse: collapse;
+
+}
+
+.EN{
+    margin-top: 10px;
+    border: black solid 2px;
+    border-left: 0;
+    height: 50px;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    display: inline-block;
+    width: 110px;
+    float: left;
+    border-collapse: collapse;
+}
+
+.aktivSpraak{
+    background-color: #222D4D;
+    color: white;
+}
+
+.aktivSpraak a{
+    color: white;
+}
+
+.liste{
+    display: none;
+}
+
+    /*banner*/
+
+.banner{
+    position: absolute;
+    top: 70px;
+    height: calc(100vh - 70px);
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.overskrft{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+}
+.overskrft h1{
+    font-size: 50px!important;
+    line-height: 55px!important;
+}
+
+.bilde{
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    top: -5%;
+    left: -5%;
+    background-image: url("../Media/frukt2B.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.logoBanner{
+    position: absolute;
+    z-index: 2;
+    top: calc(50vh - 35px - 150px);
+}
+
+.logoBanner:after{
+    display: block;
+    color: white;
+    font-size: 30px;
+}
+
+.banner img{
+    height: 300px;
+    width: auto;
+}
+
+.banner h1{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.luke2{
+    position: absolute;
+    height: 70px;
+    top:calc(100vh - 70px);
+    text-align: center;
+}
+
+.luke2 p{
+    font-weight: bold;
+}
+
+.luke2 a{
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    animation: pilAni 2s infinite;
+    -o-animation: pilAni 2s infinite;
+}
+
+.luke2 .fa-chevron-down{
+    opacity: 0.5;
+    font-size: 50px;
+    color: white;
+}
+
+@keyframes pilAni {
+    0% {top: 0}
+    50% {top: -15px}
+    100% {top: 0}
+}
+
+@-o-keyframes pilAni {
+    0% {top: 0}
+    50% {top: -15px}
+    100% {top: 0}
+}
+
+
+    /*hoved*/
+
+.hoved{
+
+    min-height: fit-content;
+    display: block;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.hoved h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: #222D4D;
+}
+
+    /*kortene*/
+
+.rad{
+    display: inline-block;
+    position: static;
+    min-height: fit-content;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.kollone{
+    display: table-cell;
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+}
+
+
+.kort{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 20em;
+    padding: 16px;
+    text-align: center;
+    background-color: #222D4D;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+.omFortsettelse{
+    position: relative;
+    height: fit-content;
+    display: inline-block;
+    padding-bottom: 2em;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #222D4D;
+    font-size: 20px;
+}
+
+.omFortsettelse p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.omFortsettelse h3{
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 70px;
+    background-color: white;
+}
+
+.punkter{
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 10px;
+    padding-right: 20px;
+    font-size: 20px;
+    width: auto;
+}
+
+.punkter li{
+    line-height: 27px;
+}
+
+.fas{
+    font-size: 20px;
+}
+
+.ZeroWaste{
+    display: inline-block;
+    position: relative;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #222D4D;
+    font-size: 20px;
+}
+
+.sticky{
+    font-weight: bold;
+    text-align: center!important;
+    top: 70px;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: white;
+}
+
+.ZeroWaste p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.ZeroWaste a{
+    opacity: 0.8;
+    color: white!important;
+}
+
+.ZeroWaste a:hover{
+    opacity: 1;
+}
+
+.luke4{
+    position: absolute;
+    top: -70px;
+}
+
+    /*finn oss*/
+
+.finnOss{
+    position: relative;
+    height: fit-content;
+    display: inline-block;
+    padding-bottom: 2em;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #222D4D;
+    font-size: 20px;
+}
+
+.luke3{
+    position: absolute;
+    top:-70px;
+}
+
+
+    /*bunn*/
+
+.bunn{
+    height: fit-content;
+    position: relative;
+    background-color: #7E685A;
+    padding-bottom: 50px;
+}
+
+.bunn h4{
+    color: white!important;
+}
+
+    /*bilder*/
+
+.radN{
+
+    position: static;
+    height: fit-content;
+    display: inline-block;
+    /*background-color: #D5D5D5;*/
+    padding-bottom: 10px;
+}
+
+.kolloneN{
+    float: left;
+    display: inline-block;
+    width: 25%;
+    padding: 0 25px;
+}
+
+.kortN{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 20em;
+    padding: 26px;
+    text-align: center;
+    background-color: #7E685A;
+    color: white;
+    margin: 30px auto 40px auto;
+}
+
+.tekstN{
+    opacity: 0;
+}
+
+.tekstN p{
+    display: block;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.blurred{
+    display: none;
+}
+
+/*
+.kortN:hover .tekstN{
+    transition-duration: 0.3s;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    width: fit-content;
+    position: absolute;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 200;
+}
+*/
+    /*person en*/
+
+:root:before{
+    display: none;
+    content: url("../Media/PROFIL/NicolaiBlurra.jpg") url("../Media/PROFIL/ErikBlurra.png");
+}
+
+.første{
+    background-image: url("../Media/PROFIL/Erik.jpg");
+    background-size: cover;
+}
+
+.første:hover{
+    background-image: url("../Media/PROFIL/ErikBlurra.png");
+    transition-duration: 0.3s;
+}
+
+.første:hover .tekstN{
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+}
+
+.første:focus-within{
+    background-image: url("../Media/PROFIL/ErikBlurra.png");
+    transition-duration: 0.3s;
+}
+
+.første:focus-within .tekstN{
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+}
+
+
+    /*person to*/
+.andre{
+    background-image: url("../Media/PROFIL/Frida.jpg");
+    background-size: cover;
+}
+
+.andre:after{
+    display: none;
+    content: url("../Media/PROFIL/FridaBlurra.png");
+}
+
+.andre:hover{
+    background-image: url("../Media/PROFIL/FridaBlurra.png");
+}
+
+.andre:hover .tekstN{
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+}
+
+.andre:focus-within{
+    background-image: url("../Media/PROFIL/FridaBlurra.png");
+}
+
+.andre:focus-within .tekstN{
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+}
+    /*person tre*/
+
+.tredje{
+    background-image: url("../Media/PROFIL/Lisa.jpg");
+    background-size: cover;
+}
+
+.tredje:after{
+    display: none;
+    content: url("../Media/PROFIL/LisaBlurra.png");
+}
+
+.tredje:hover{
+    background-image: url("../Media/PROFIL/LisaBlurra.png");
+}
+
+.tredje:hover .tekstN{
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+}
+
+.tredje:focus-within{
+    background-image: url("../Media/PROFIL/LisaBlurra.png");
+}
+
+.tredje:focus-within .tekstN{
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+}
+
+    /*person fire*/
+
+.fjerde{
+    background-image: url("../Media/PROFIL/Nicolai.jpg");
+    background-size: cover;
+}
+
+.fjerde:hover{
+    background-image: url("../Media/PROFIL/NicolaiBlurra.jpg");
+    transition-duration: 0.3s;
+}
+
+.fjerde:hover .tekstN{
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+}
+
+.fjerde:focus-within{
+    background-image: url("../Media/PROFIL/NicolaiBlurra.jpg");
+    transition-duration: 0.3s;
+}
+
+.fjerde:focus-within .tekstN{
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+}
+
+
+.tekstN p{
+    padding: 4px;
+}
+
+.bildeN{
+    height: 20em;
+    overflow: hidden;
+}
+
+#bunnL{
+    scroll-margin-top: 60px;
+}
+
+/*.person{
+    position: relative;
+    overflow: hidden;
+    height: 20em;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px 100px 10px 100px;
+}
+ */
+
+    /*pil opp*/
+
+.opp{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 140px;
+    animation: pilAniOpp 2s infinite;
+    -o-animation: pilAniOpp 2s infinite;
+}
+
+.opp a{
+    opacity: 0.5;
+    color: white;
+    font-size: 20px;
+}
+
+.opp a:hover{
+    opacity: 1;
+}
+
+.fa-chevron-up{
+    font-size: 50px;
+
+}
+
+
+@keyframes pilAniOpp {
+    0% {bottom: 40px}
+    50% {bottom: 25px}
+    100% {bottom: 40px}
+}
+
+@-o-keyframes pilAniOpp {
+    0% {bottom: 20px}
+    50% {bottom: 5px}
+    100% {bottom: 20px}
+}
+
+.bunn h4{
+    font-size: 25px;
+    text-align: center;
+}
+
+.bunnInnhold{
+    color: white;
+}
+
+.bunnInnhold p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.bunnInnhold a{
+    text-decoration: underline;
+    color: white;
+
+}
+
+#info{
+    width: auto;
+    text-align: initial;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: initial;
+}
+
+#infoMobil{
+    display: none;
+}
+
+.tekstBunn{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.mapouter{
+    margin: 20px auto 30px auto;
+    position:relative;
+    text-align:right;
+    height:250px;
+    width:250px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:250px;
+    width:250px;
+}
+
+
+
+    /*bredde tillpassing*/
+
+
+@media only screen and (max-width: 1450px){
+    .kort{
+        height: 22em;
+    }
+}
+
+@media only screen and (max-width: 1285px){
+    .link{
+        font-size: 20px;
+    }
+
+    .strek{
+        font-size: 20px;
+    }
+
+    .kort{
+        height: 24em;
+    }
+}
+
+@media only screen and (max-width: 1230px){
+    .navLinks{
+        display: none;
+    }
+
+
+    .no\/en{
+        width: fit-content;
+        width: -moz-fit-content;
+        left: 50%;
+        text-align: center;
+        right: 0;
+        transform: translate(-50%);
+        margin: 0;
+    }
+
+    .no\/en a{
+        tab-index: 0;
+    }
+
+    .meny {
+        tab-index: 1;
+        height: 70px;
+        width: 50px;
+        color: black;
+        font-size: 20px;
+        border: none;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+        opacity: 0.5;
+        background-color: white;
+    }
+
+    .mobilmeny {
+        tab-index: 1;
+        height: 100px;
+        position: absolute;
+        right: 50px;
+        display: inline-block;
+        width: 30px;
+    }
+
+    .liste {
+        min-height: 100px;
+        display: none;
+        position: absolute;
+        background-color: white;
+        width: fit-content;
+        top: 70px;
+        right: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 200;
+    }
+
+    .liste a {
+        color: black;
+        font-size: 20px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        border-bottom: 0.5px solid black;
+    }
+
+
+    .liste a:hover {
+        background-color: white;
+    }
+
+    .mobilmeny:hover ~ .liste {
+        display: block;
+        top: 70px;
+        position: absolute;
+    }
+
+    .liste:hover{
+        display: block;
+    }
+
+    .mobilmeny:focus-within .liste{
+        display: block;
+        top: 70px;
+        left: 0;
+        position: absolute;
+    }
+
+    .mobilmeny:hover .meny {
+        opacity: 1;
+    }
+
+    .menyT{
+        font-size: 15px;
+    }
+
+    #om:target  .liste{
+        display: none;
+    }
+
+
+    .kollone {
+        width: 50%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .kort{
+        height: 15em;
+    }
+
+    .kolloneN{
+        width: 50%;
+        text-align: center;
+    }
+    .kortN{
+        margin: 30px auto auto auto;
+        max-width: 400px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px){
+    .overskrft h1{
+        font-size: 30px!important;
+        line-height: 35px!important;
+    }
+
+    .kolloneF{
+        width: 50%;
+    }
+
+    .bunn{
+        height: fit-content;
+    }
+
+    .kort{
+        height: 17em;
+    }
+
+    .omFortsettelse{
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+    .omFortsettelse p{
+        text-align: initial;
+    }
+
+    .ZeroWaste{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .ZeroWaste p{
+        text-align: initial;
+    }
+
+    .NO{
+        font-size: 15px;
+        width: 50px;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .no\/en{
+        margin-top: -5px;
+    }
+
+    .no\/en a{
+        line-height: 40px;
+    }
+
+    .menyT{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .NO img{
+        display: none;
+    }
+
+    .EN{
+        font-size: 15px;
+        width: 50px;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .EN img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .kort{
+        height: 19em;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .bunn{
+        height: fit-content;
+    }
+
+    .kollone{
+        width: 100%;
+    }
+
+    .kort{
+        height: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .kolloneN{
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .kolloneN{
+        text-align: center;
+    }
+
+    .bunn{
+        height: fit-content;
+    }
+
+    .person{
+        width: 50%;
+    }
+}
+
+@media screen and (max-height: 580px){
+    .logoBanner img{
+        height: 200px;
+    }
+
+    .logoBanner{
+        top: 20vh;
+    }
+}
+
+@media screen and (max-height: 450px){
+    .logoBanner img{
+        height: 150px;
+    }
+
+    .logoBanner{
+        top: 25vh;
+    }
+
+}
